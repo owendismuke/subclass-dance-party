@@ -28,7 +28,7 @@ body, a:link, a:visited, a:active{
 }
 .pandaLiz{
   background: url(images/pandaliz.png);
-  position: absolute;
   height: 64px;
   width: 47px;
+  position: absolute;
 }
