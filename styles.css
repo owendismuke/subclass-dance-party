@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+  overflow: hidden;
 }
 body{
   margin: 0px;
@@ -21,7 +22,13 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  border: 10px solid red;
+  border-radius: 10px;
+  position: absolute;
+}
+.pandaLiz{
+  background: url(images/pandaliz.png);
+  position: absolute;
+  height: 64px;
+  width: 47px;
 }
