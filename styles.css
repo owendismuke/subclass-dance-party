@@ -1,5 +1,5 @@
 body, html{
-  background: url(images/meowmix.gif) 100% fixed;
+  /*background: url(images/meowmix.gif) 100% fixed;*/
   height:100%;
   overflow: hidden;
 }
@@ -7,6 +7,17 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+}
+body::after{
+  content: "";
+  background: url(images/meowmix.gif);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -99,8 +110,14 @@ body, a:link, a:visited, a:active{
   0% {
     transform: scale(1);
   }
+  30% {
+    transform: rotateZ(20deg);
+  }
   60% {
     transform: scale(1.2);
+  }
+  80%{
+    transform: rotateZ(-20deg);
   }
   100% {
     transform: scale(1);
